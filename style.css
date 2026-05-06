@@ -3,7 +3,7 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100dvw;
     height: 100dvh;
 }
 header{
