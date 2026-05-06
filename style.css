@@ -85,6 +85,13 @@ main{
     
     }
 }
+@media(max-width:768px){
+.isi{
+    /* background-color: black; */
+    padding: 10px ;
+}
+}
+
 
 main > .bab{
     /* display:flex;
