@@ -3,7 +3,7 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: column;
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
 }
 header{
@@ -16,14 +16,34 @@ header{
     flex: 0.1;
     background-color: aqua;
 }
-header > .nav{
+
+
+@media (max-width: 768px) {
+ header > .nav{
     display: flex;
+    flex-direction: row;
     flex: 0.1;
     text-decoration: none;
     background-color: aquamarine;
     color: black;
     padding: 5px;
     border-radius: 10px;
+    font-size: 5px;
+}
+    
+}
+
+@media(min-width:768px){
+ header > .nav{
+    display: flex;
+    flex-direction: row;
+    flex: 0.1;
+    text-decoration: none;
+    background-color: aquamarine;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
 }
 .nav:hover{
     background-color: azure;
@@ -53,10 +73,19 @@ main{
 }
 .kotak{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     
 }
+@media(min-width:768px){
+    .kotak{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    }
+}
+
 main > .bab{
     /* display:flex;
     flex-direction: row;
@@ -66,6 +95,7 @@ main > .bab{
     gap: 10px;
 
 }
+@media(max-width:768px){
 .gambarbab > img{
     display: flex;
     justify-content: center;
@@ -73,7 +103,19 @@ main > .bab{
     background-color: aqua;
     border-radius: 10px;
     padding: 20px;
-    
+    max-width: 200px;
+    transition: background-color 1s;
+
+}
+}
+.gambarbab > img{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
     transition: background-color 1s;
 }
 .gambarbab > img:hover{
